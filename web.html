@@ -55,3 +55,274 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const industriesData = {
+            "Technology": {
+                "pathways": {
+                    "Software Development": [
+                        "Develop a task management app.",
+                        "Create a language learning platform.",
+                        "Build a personalized fitness app.",
+                        "Design a tool for content creators.",
+                        "Start a SaaS for small businesses.",
+                        "Develop a mobile game with a unique storyline.",
+                        "Create a coding education platform for kids.",
+                        "Build a virtual reality experience for training.",
+                        "Develop an AI-powered customer service chatbot.",
+                        "Create a platform for freelance developers."
+                    ],
+                    "Hardware & IoT": [
+                        "Design a smart home device.",
+                        "Build a wearable health tracker.",
+                        "Develop a drone for industrial inspection.",
+                        "Create a modular robotics kit for education.",
+                        "Start a 3D printing service for prototypes.",
+                        "Develop a smart agriculture system.",
+                        "Build an open-source hardware platform.",
+                        "Create a device for environmental monitoring.",
+                        "Develop a smart pet feeder.",
+                        "Design a portable solar power system."
+                    ],
+                    "AI & Data Science": [
+                        "Develop an AI-driven marketing tool.",
+                        "Create a data analytics platform for e-commerce.",
+                        "Build a machine learning model for fraud detection.",
+                        "Start a data visualization service.",
+                        "Develop a natural language processing tool.",
+                        "Create a personalized recommendation engine.",
+                        "Build an AI for medical diagnosis.",
+                        "Develop an AI for stock market analysis.",
+                        "Create a platform for AI model deployment.",
+                        "Build an AI for image recognition."
+                    ],
+                    "Web3 & Blockchain": [
+                        "Develop a decentralized social media platform.",
+                        "Create an NFT marketplace for digital art.",
+                        "Build a decentralized finance (DeFi) application.",
+                        "Start a blockchain consulting service.",
+                        "Develop a platform for tokenized assets.",
+                        "Create a decentralized autonomous organization (DAO).",
+                        "Build a blockchain-based supply chain solution.",
+                        "Develop a platform for crypto education.",
+                        "Create a blockchain for voting systems.",
+                        "Build a decentralized identity management system."
+                    ],
+                    "Cybersecurity": [
+                        "Develop a cybersecurity training platform.",
+                        "Create a penetration testing service.",
+                        "Build a tool for threat intelligence.",
+                        "Start a cybersecurity consulting firm.",
+                        "Develop a secure messaging app.",
+                        "Create a platform for vulnerability management.",
+                        "Build a tool for data encryption.",
+                        "Develop a platform for security audits.",
+                        "Create a firewall solution.",
+                        "Build an intrusion detection system."
+                    ]
+                }
+            },
+            "Creative Arts": {
+                "pathways": {
+                    "Digital Art & Design": [
+                        "Start a digital illustration service.",
+                        "Create a motion graphics studio.",
+                        "Build a platform for selling digital art.",
+                        "Develop a brand identity design agency.",
+                        "Create a virtual reality art gallery.",
+                        "Start a 3D modeling and animation service.",
+                        "Develop a platform for graphic design templates.",
+                        "Create a service for custom digital portraits.",
+                        "Build a platform for selling digital patterns.",
+                        "Develop a service for UI/UX design."
+                    ],
+                    "Music & Audio": [
+                        "Start a music production studio.",
+                        "Create a platform for selling royalty-free music.",
+                        "Build a podcast production company.",
+                        "Develop a platform for audio editing and mastering.",
+                        "Create a service for custom sound design.",
+                        "Start a music education platform.",
+                        "Develop a platform for live streaming audio.",
+                        "Create a service for audio restoration.",
+                        "Build a platform for selling sound effects.",
+                        "Develop a service for voiceover recording."
+                    ],
+                    "Writing & Content": [
+                        "Start a content marketing agency.",
+                        "Create a platform for freelance writers.",
+                        "Build a blog or online magazine.",
+                        "Develop a service for editing and proofreading.",
+                        "Create a platform for selling e-books.",
+                        "Start a copywriting service.",
+                        "Develop a platform for creating online courses.",
+                        "Create a service for technical writing.",
+                        "Build a platform for creating scripts.",
+                        "Develop a service for translation."
+                    ],
+                    "Film & Video": [
+                        "Start a video production company.",
+                        "Create a platform for selling stock footage.",
+                        "Build a platform for online video courses.",
+                        "Develop a service for video editing and post-production.",
+                        "Create a service for creating animated videos.",
+                        "Start a documentary film production company.",
+                        "Develop a platform for live streaming video.",
+                        "Create a service for creating promotional videos.",
+                        "Build a platform for selling short films.",
+                        "Develop a service for creating video tutorials."
+                    ],
+                    "Photography": [
+                        "Start a photography studio.",
+                        "Create a platform for selling stock photos.",
+                        "Build a platform for online photography courses.",
+                        "Develop a service for photo editing and retouching.",
+                        "Create a service for creating custom photo albums.",
+                        "Start a photography tour company.",
+                        "Develop a platform for photo printing services.",
+                        "Create a service for creating product photography.",
+                        "Build a platform for selling photography presets.",
+                        "Develop a service for creating real estate photography."
+                    ]
+                }
+            },
+            "Food & Beverage": {
+                "pathways":{
+                    "Restaurant/Cafe": [
+                        "Open a themed restaurant.",
+                        "Start a specialty coffee shop.",
+                        "Create a food truck business.",
+                        "Develop a ghost kitchen concept.",
+                        "Start a catering service.",
+                        "Open a bakery with unique pastries.",
+                        "Create a restaurant that uses local farm to table ingredients.",
+                        "Develop a restaurant that offers subscription meal boxes.",
+                        "Start a restaurant focused on a specific diet.",
+                        "Open a dessert only restaurant."
+                    ],
+                    "Food Production": [
+                        "Start a specialty food product line.",
+                        "Create a line of organic snacks.",
+                        "Build a craft brewery.",
+                        "Develop a line of gourmet sauces.",
+                        "Start a farm to table food delivery service.",
+                        "Open a specialty cheese shop.",
+                        "Create a line of vegan food products.",
+                        "Develop a line of gluten free snacks.",
+                        "Start a beverage company.",
+                        "Open a specialty spice shop."
+                    ],
+                    "Food Tech": [
+                        "Develop a food delivery app.",
+                        "Create a meal planning app.",
+                        "Build a platform for connecting local farmers with restaurants.",
+                        "Develop a smart kitchen appliance.",
+                        "Start a service for personalized nutrition plans.",
+                        "Open a vertical farm.",
+                        "Create a restaurant reservation app.",
+                        "Develop a kitchen inventory management app.",
+                        "Start a service for reducing food waste.",
+                        "Open a restaurant that uses robots to prepare food."
+                    ],
+                    "Beverage Production": [
+                        "Start a craft brewery.",
+                        "Create a line of specialty teas.",
+                        "Build a winery.",
+                        "Develop a line of artisanal sodas.",
+                        "Start a kombucha brewery.",
+                        "Open a juice bar.",
+                        "Create a line of non-alcoholic cocktails.",
+                        "Develop a line of specialty coffees.",
+                        "Start a beverage subscription service.",
+                        "Open a specialty beverage shop."
+                    ],
+                    "Food Retail": [
+                        "Open a specialty grocery store.",
+                        "Create a farmers market booth.",
+                        "Build a online grocery delivery service.",
+                        "Develop a meal kit delivery service.",
+                        "Start a specialty food subscription box.",
+                        "Open a bulk food store.",
+                        "Create a line of healthy snacks for retail.",
+                        "Develop a platform for selling local food products.",
+                        "Start a food truck that sells retail products.",
+                        "Open a specialty candy shop."
+                    ]
+                }
+            }
+        };
+
+        const industrySelection = document.getElementById('industry-selection');
+        const pathwaySelection = document.getElementById('pathway-selection');
+        const ideaDisplay = document.getElementById('idea-display');
+        const industryGrid = industrySelection.querySelector('.grid');
+        const pathwayGrid = pathwaySelection.querySelector('.grid');
+        const ideasContainer = ideaDisplay.querySelector('#ideas-container');
+        const backToIndustriesButton = pathwaySelection.querySelector('#back-to-industries');
+        const backToPathwaysButton = ideaDisplay.querySelector('#back-to-pathways');
+
+        let selectedIndustry = null;
+        let selectedPathway = null;
+
+        function createIndustryCards() {
+            for (const industry in industriesData) {
+                const industryCard = document.createElement('div');
+                industryCard.className = 'industry-card';
+                industryCard.textContent = industry;
+                industryCard.addEventListener('click', () => {
+                    selectedIndustry = industry;
+                    industrySelection.classList.add('hidden');
+                    pathwaySelection.classList.remove('hidden');
+                    ideaDisplay.classList.add('hidden');
+                    createPathwayCards(industry);
+                });
+                industryGrid.appendChild(industryCard);
+            }
+        }
+
+        function createPathwayCards(industry) {
+            pathwayGrid.innerHTML = ''; // Clear previous pathways
+            for (const pathway in industriesData[industry].pathways) {
+                const pathwayCard = document.createElement('div');
+                pathwayCard.className = 'pathway-card';
+                pathwayCard.textContent = pathway;
+                pathwayCard.addEventListener('click', () => {
+                    selectedPathway = pathway;
+                    pathwaySelection.classList.add('hidden');
+                    ideaDisplay.classList.remove('hidden');
+                    createIdeaCards(industry, pathway);
+                });
+                pathwayGrid.appendChild(pathwayCard);
+            }
+        }
+
+        function createIdeaCards(industry, pathway) {
+            ideasContainer.innerHTML = ''; // Clear previous ideas
+            const ideas = industriesData[industry].pathways[pathway];
+            for (const idea of ideas) {
+                const ideaCard = document.createElement('div');
+                ideaCard.className = 'idea-card';
+                ideaCard.textContent = idea;
+                ideasContainer.appendChild(ideaCard);
+            }
+        }
+
+        backToIndustriesButton.addEventListener('click', () => {
+            industrySelection.classList.remove('hidden');
+            pathwaySelection.classList.add('hidden');
+            ideaDisplay.classList.add('hidden');
+            selectedIndustry = null;
+            selectedPathway = null;
+        });
+
+        backToPathwaysButton.addEventListener('click', () => {
+            pathwaySelection.classList.remove('hidden');
+            ideaDisplay.classList.add('hidden');
+            selectedPathway = null;
+        });
+
+        // Initialize the app
+        createIndustryCards();
+    </script>
+</body>
+</html>
